@@ -1,0 +1,218 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7f7;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #c62828;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Navigation bar */
+nav {
+    background: #8e0000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcccc;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #ffe1e1, #fff5f5);
+}
+
+.hero h2 {
+    color: #b71c1c;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    background: #c62828;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #8e0000;
+}
+
+/* Form and search cards */
+.card {
+    background: white;
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(150, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #b71c1c;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #ef9a9a;
+    border-color: #c62828;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #c62828;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8e0000;
+}
+
+/* Donor search results */
+#donorResults {
+    margin-top: 20px;
+}
+
+.donor-result {
+    background: #fff0f0;
+    border-left: 4px solid #c62828;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+#donorMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Emergency section */
+.emergency {
+    text-align: center;
+    margin: 35px 15px;
+    padding: 30px 20px;
+    background: #ffe1e1;
+    border-radius: 10px;
+}
+
+.emergency h2 {
+    color: #b71c1c;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333333;
+    color: white;
+    padding: 22px 15px;
+    font-size: 14px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
